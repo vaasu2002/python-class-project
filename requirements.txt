@@ -1,8 +1,11 @@
-pymongo[srv]==4.2.0
 from-root
 pandas
+pymongo==4.3.3
+numpy
 scipy
+setuptools
 dill
+sklearn
 PyYAML
 imblearn
 -e .

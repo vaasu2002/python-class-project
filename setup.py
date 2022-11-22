@@ -9,7 +9,6 @@ largest layered mafic-ultramafic intrusion worldwide, is host of numerous, later
 stratigraphic position the layers are subdivided into a lower, middle and upper group ."""
 EMAIL = "bishtvaasu@gmail.com"
 REQUIREMENT_FILE_NAME= "requirements.txt"
-
 HYPHEN_E_DOT = "-e ."
 
 def get_requirements_list() -> List[str]:
@@ -30,7 +29,7 @@ setup(
     version = VERSION,
     description = DESCRIPTION,
     packages = find_packages(),
-    install_requires = get_requirements_list(),
+    #install_requires = get_requirements_list(),
     long_description=DESCRIPTION,
     author_email = EMAIL
 )
