@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from src.configuration.mongo_ingestion_connection import MongoDBClient
 from src.constant.database import INGESTION_DATABASE_NAME,INGESTION_COLLECTION_NAME
-from src.exception import SensorException
+from src.exception import GeoException
 
 class GeochemicalData:
 
@@ -21,4 +21,4 @@ class GeochemicalData:
             return df
 
         except Exception as e:
-            raise SensorException(e, sys)
+            raise GeoException(e, sys)
